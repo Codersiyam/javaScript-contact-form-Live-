@@ -4,7 +4,7 @@ var count = document.getElementById("count");
 
 msg.addEventListener('keyup', function(){
     chart.innerHTML= msg.value.length;
-    if(msg.value.length>5000){
+    if(msg.value.length>15){
         msg.style.border="2px solid red";
         chart.style.color="red";
         count.style.color="red";
