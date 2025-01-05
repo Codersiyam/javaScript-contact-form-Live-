@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: #0d1522;
+    padding: 20px;
+}
+.continer{
+    width: 600px;
+    max-width: 100%;
+    background: #ffff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+}
+.continer h1{
+    margin-bottom: 30px;
+    font-size: 40px;
+    color: #0088ff;
+    font-weight: bolder;
+}
+.form_file{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.form_file .index{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form_file .index i{
+    background: #0088ff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 38px;
+}
+.form_file .index .form_info{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #767474;
+}
+.form_file .index .form_info:focus{
+    border: 1px solid #0088ff;
+    caret-color: #0088ff;
+}
+.form_file .index .form_info:focus::placeholder{
+    color: #0088ff;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.msg{
+    margin-top: 10px;
+}
+.msg textarea{
+    padding: 10px;
+    border: 2px solid #767474;
+    outline: none;
+    border-radius: 5px;
+    max-width: 100%;
+}
+.msg textarea:hover{
+    border: 2px solid #0088ffb8;
+    cursor: pointer;
+}
+.msg textarea:focus{
+    border: 2px solid #0088ff;
+    caret-color: #0088ff;
+    cursor: auto;
+}
+.msg textarea:focus::placeholder{
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: #0088ff;
+}
+label{
+    display:flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    gap: 5px;
+    color: #0088ff;
+    font-weight: colder;
+}
+.form_button{
+    margin-top: 25px;
+}
+.form_button .form_btn{
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: colder;
+    color: #fff;
+    background: #0088ff;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+.form_button .form_btn:hover{
+   background: #0d1522;
+   color: #fff;
+   cursor: pointer;
+   transform: translateY(-2px);
+}
